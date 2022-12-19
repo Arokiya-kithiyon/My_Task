@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="main2.css">
+    <script src="main2.js"></script>
+<head>
+    <title>PDC_Bill</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="sidebar" id="side">
+            <a href="index.html">Invoice</a>
+          
+            <a href="index2.html">Bill</a>
+         
+            <h2 id="name"> PDC Bill</h2>
+           
+            <form   id="form">
+        <div>
+         <div>
+         <lable>Customer Name :</lable>
+         <input type="value" placeholder="Enter Customer Name" class="box1" id="cusName">
+         <lable class="datelable">Bill Date :</lable>
+         <span class="span1">
+         <input type="Date" id="Billdate">
+        </span><br><br>
+         </div>
+
+         <div>
+            <lable>Cheque Number :</lable>
+            <input type="value" placeholder="Enter Cheque Number" class="box2" id="chequeNum"><br><br>
+         </div>
+
+         <div>
+            <lable>Bill Number :</lable>
+           <select class="box3" id="billNum">
+            <option select value="" >Choose Bill Number</option>
+            <option value="1078364000000017106 ">1078364000000017106 </option>
+            <option value="1078364000000017086">1078364000000017086 </option>
+            <option value="1078364000000017037">1078364000000017037</option>
+
+            </select>
+            <button type="button" onclick="view()" id="showbtn"> show</button><br><br>
+         </div>
+
+         <div>
+            <lable>Bank Name :</lable>
+          
+            <input type="value" placeholder="Enter Bank Name" class="box4" id="Bank"><br><br>
+
+         </div>
+         <button type="button" onclick="save();" id="submitbtn"> submit</button><br><br>
+          </div>
+          </form>
+          <div>
+            <table id="data">
+              <tr>
+                <th>Customer Name</th>
+                <th>Cheque Number</th>
+                <th>Invoice Number</th>
+                <th>Bank Name</th>
+                
+                
+              </tr>
+             <tr id="inputs"></tr>
+          
+            </table>
+            </div>
+    </div>
+</body>
+</html>

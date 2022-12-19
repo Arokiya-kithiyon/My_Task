@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sampleApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="sidebar">
+        
+          <ul><a href="index.html">Invoice</a>
+            <li><a onclick="retrive();" href="#DB">Data</a></li></ul>
+          <a href="index2.html">Bill</a>
+        </div>
+      
+  
+
+      <h2 id="name"> Post Date Cheque</h2>
+         
+            <form   id="form">
+        <div>
+          <!--customer name-->
+                  
+          <div>
+         
+            <lable>Customer Name :</lable>
+           
+            <input type="value" placeholder="Customer Name" class="box5" id="CustomerName">
+                       
+           
+             
+            </div><br>
+
+         
+
+       <!--invoice -->
+
+         <div>
+         <lable>Invoice Number :</lable>
+         <select class="box3" id="invoiceNum">
+          <option select value="" >Choose Invoice Number</option>
+         
+         
+          </select>
+        
+         <lable class="datelable">Date of Invoice:</lable>
+       <span class="span2">
+         <input type="Date" id="date3"><br><br>
+        
+         <button type="button" onclick="show();" id="showbtn"> show</button><br>
+        </span>
+         </div>
+
+         <!--cheque number -->
+          
+         <div>
+          <lable>Cheque Number :</lable>
+          <input type="value" placeholder="Enter Cheque Number" class="box2" id="chequeNum">
+          <lable class="datelable">Post Date:</lable>
+          <span class="span4">
+            <input type="Date" id="date4">
+             </span><br><br>
+          </div>
+
+                     
+                 <!--Bank Name -->
+         <div>
+         
+         <lable>Bank Name :</lable>
+        
+         <input type="value" placeholder="Enter Bank Name" class="box4" id="Bank">
+         <br><br>
+         </div>
+
+           
+
+        
+               
+         </div><br>
+  <!--cheque status -->
+      <div  class="button">
+           <lable>Cheque Status :</lable>
+            <button type="button" onclick="checking();"; id="status1"> Check</button>
+
+            <button onclick="Sub();" type="button" > Submit</button>
+           
+           <button type="button" onclick="cancel();" id="status4"> Cancel</button>
+
+           
+
+   
+      </div>
+     
+          </form>
+
+          <div id="DB">
+            <table id="DB_table">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Invoice Number</th>
+                  <th>Invoice Date</th>
+                  <th>Cheque Number</th>
+                  <th>Post Date</th>
+                  
+                  <th>Bank Name</th>
+                               
+                  
+                </tr>
+              </thead>
+              <tbody id="table_body">
+               
+              </tbody>
+            </table>
+        
+           </div>
+
+        
+       </div>
+      
+</body>
+
+</html>

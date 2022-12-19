@@ -1,0 +1,29 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "2655000000006009",
+      "name": "myTask",
+      "domain": {
+        "id": "50011267996",
+        "name": "mytask-60017990743.development"
+      },
+      "env": [
+        {
+          "idx": 1,
+          "id": "60017990743",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

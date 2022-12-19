@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "targets": [
+      "my_task_function",
+      "Cron_Function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}
